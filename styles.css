@@ -2,29 +2,41 @@
 #intro {
   color: rgb(0, 0, 0);
   text-align: center;
-  margin: 50px;
 }
 
 .flags {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5px;
 }
 
 h2 {
   font-size: medium;
   font-weight: 200;
 }
+
 /* END SETUP */
 
 /* Classes that you might find useful */
 /* You may also have to implement your own classes */
+
+.label {
+  color:rgb(255, 142, 13)
+}
+
+.label:hover {
+  color:rgb(196, 21, 21);
+  font-size: large;
+}
 
 .flag {
   height: 300px;
   width: 500px;
   border-style: solid;
   margin-bottom: 5rem;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .twovert {
@@ -32,6 +44,7 @@ h2 {
 }
 
 .threevert {
+  height: 33.3%;
 }
 
 .threehoriz {
@@ -58,6 +71,10 @@ h2 {
 /* Colors */
 
 /* QUESTION 1 */
+
+#white {
+  background-color: #fff;
+}
 
 .orange {
   background-color: orange;
@@ -91,23 +108,40 @@ h2 {
   background-color: #000;
 }
 
+.red {
+  background-color:rgb(196, 21, 21)
+}
+
+.light-blue {
+    background-color:rgb(42, 172, 248)
+}
+
+
 /* BEGIN QUESTION 2 */
 
 .thailand-red {
-  /* TODO */
+  background-color: #b5002d;
+  height: 17.5%;
 }
 
 .thailand-white {
-  /* TODO */
+  background-color: white;
+  height: 17.5%;
 }
 
 .thailand-blue {
-  /* TODO */
+  background-color: #2e2a4c;
+  height: 30%;
 }
 
 /* END QUESTION 2 */
 
 /* BEGIN QUESTION 3 */
+
+.romania-blue, .romania-red, .romania-yellow {
+  width: 33.3%;
+  height: 100%;
+}
 
 .romania-blue {
   background-color: #002c84;
@@ -126,14 +160,19 @@ h2 {
 /* QUESTION 4 */
 .mexico-green {
   background-color: #006341;
+  width: 33.3%;
 }
 
 .mexico-img {
-  /* TODO */
+  align-self: center;
+  max-height: 33.3%;
+  max-width: 33.3%;
+  display: flex;
 }
 
 .mexico-red {
   background-color: #ce1126;
+  width: 33.3%
 }
 
 /* QUESTION 6 */
@@ -161,5 +200,5 @@ h2 {
   box-sizing: border-box;
   background-color: lightblue;
   background-clip: content-box, padding-box;
-  /* TODO */
+  padding: 30px;
 }
